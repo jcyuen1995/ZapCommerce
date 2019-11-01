@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/7311df490f.js" integrity="sha384-oDvhHAiExTfmcX9h/DT0+Eibx0CQAhqTj+JLYfNHLjfJ2c6IQfDAbX4LuZswwcUA" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600,700|Montserrat:600,700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+    <title>Zap</title>
+</head>
+<body>
+    <header>
+        <section class="wrapper">
+            <nav>
+                <img class = "headerLogo" src="assets/header-logo.png" alt="Zap logo">
+                <i class="fas fa-bars"></i>
+                <ul class = "navLinks">
+                    <li>home</li>
+                    <li>demos</li>
+                    <li>pages</li>
+                    <li>portfolio</li>
+                    <li>shop</li>
+                    <li>blog</li>
+                </ul>
+                <section class= "font-awesome">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-search"></i>
+                </section>
+            </nav>
+            <section class ="headerText">
+                <h2>the zap - best psd template</h2>
+                <h1>woocommerce</h1>
+                <h3 class = "discover">discover</h3>
+            </section>   
+        </section>
+    </header>
+    <main>
+        <section class="wrapper flex">  
+                <article class="feat-item">       
+                    <img src="assets/image-1.jpeg" alt="fashionable man with beard">
+                    <div class="overlay">
+                        <h2>new trends</h2>
+                    </div>
+                </article>
+                <article class = "feat-item">
+                    <img src="assets/image-2.jpeg" alt="fashionable woman with long hair">
+                    <div class= "overlay mid">
+                        <h4>huge sale</h4>
+                        <h3>off 70%</h3>
+                    </div>
+                </article>
+                <article class = "feat-item">
+                    <img src="assets/image-3.jpeg" alt="a blue scarf">
+                    <div class="overlay">
+                        <h2>acccessories</h2>
+                    </div>
+                </article>
+        </section>
+    </main>
+    <footer>
+        <section class="wrapper flex">
+            <section class = "footer flex">
+                <div class = "info">
+                    <h4>creative agency from london - uk</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque odio ipsa iure assumenda, quasi ipsam. Obcaecati, molestiae labore veritatis cum, est reiciendis sit aliquid qui natus accusamus aspernatur officia! Placeat.</p>
+                    <img src="assets/footer-logo.png" alt="Zap logo in black">
+                </div>
+                <div class = "links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li>theme features</li>
+                        <li>page builder</li>
+                        <li>privacy policy</li>
+                        <li>shop ruler</li>
+                        <li>services</li>
+                        <li>gallery layout</li>
+                    </ul>
+                </div>
+                <div class = "twitter">
+                    <h4>twitter widget</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas non eum possimus hic quia nihil sint in sit. Laboriosam debitis illo natus culpa quam mollitia accusantium exercitationem nihil, ullam deleniti.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat delectus eius libero iste itaque, dolore ipsam obcaecati quis asperiores quisquam, eligendi corporis sit optio inventore mollitia nam. Voluptatem, sequi velit.
+                    </p>
+                </div>
+                <div class = "instagram">
+                    <h4>instagram</h4>
+                        <div class= "instaIcons">
+                            <img src="assets/instagram-1.jpeg" alt="">
+                            <img src="assets/instagram-2.jpeg" alt="">
+                            <img src="assets/instagram-3.jpeg" alt="">
+                            <img src="assets/instagram-4.jpeg" alt="">
+                            <img src="assets/instagram-5.jpeg" alt="">
+                            <img src="assets/instagram-6.jpeg" alt="">
+                        </div>
+                </div>
+            </section>
+                <section class= copyright>
+                    <p>© 2019 zap creative psd template: powered by wpelite</p>
+                    <ul>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-snapchat-ghost"></i></li>
+                        <li><i class="fab fa-pinterest-p"></i></li>
+                        <li><i class="far fa-envelope"></i></li>
+                    </ul>
+                </section>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- script for mobile burger menu -->
+    <script>
+        $(function() {  
+            $("i.fas.fa-bars").on("click", function() {
+                $("ul.navLinks").toggleClass("visible");
+                $("ul.navLinks").slideToggle("slow");
+            })
+
+            $(window).resize(function(){
+                if ($(window).width() >= 540) {
+                $("ul.navLinks").removeAttr("style");
+                }
+            });
+        });
+    </script>
+</body>
